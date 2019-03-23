@@ -1,0 +1,50 @@
+<html>
+    <head>
+        <title>Ejercicio1</title>
+        <script>
+            //window.onload= alert("Se terminó de cargar todo");
+            window.onload = carga;
+            function carga(){
+                document.getElementById("btn").addEventListener("click",validarUsuario);
+                
+                //var boton = document.getElementById("btn").onclick = validarUsuario;
+
+                //document.getElementById("usr").value = "USUARIOS";
+                //alert("Se terminó de cargar todo");
+            }
+            var miFuncion = function validarUsuario()
+            {
+                console.log("Validando usuario");
+                var usuario = document.getElementById("usr");
+                var password = document.getElementById("pass");
+                if(usuario.value == "asd" && password.value == "asd"){
+                    alert("Son correctas");
+                }
+                else
+                {
+                    alert("No son correctas");
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form method="GET">
+                <fieldset>
+                        <legend>Login:
+                                Usuario:
+                                <br/>
+                                <input id="usr" type="text" name="txtUsr"/>
+                                <br/>
+                                Password:
+                                <br/>
+                                <input id="pass" type="password" name="txtPass"/>
+                                <br/>
+                                <input type="checkbox" name="cbRecordar" checked/> Recordar usar y contraseña
+                                <br/>
+                                <input type="button" value="Enviar" id="btn" /><!--onclick="validarUsuario();"-->
+                                <input type="reset" value="limpiar"/>
+                                </legend>
+                </fieldset>
+        </form>
+    </body>
+</html>
