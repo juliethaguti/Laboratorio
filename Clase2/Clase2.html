@@ -2,6 +2,7 @@
   <head>
     <title>Document</title>
     <script src="./funciones.js"></script>
+    <link rel ="stylesheet" href="./hojaEstilos.css">
   </head>
   <body>
     <header>
@@ -12,14 +13,22 @@
           <li><a href = "#">Link2</a></li>
           <li><a href = "./pag.html">Mi pag</a></li>
           <li><a href = "http://www.google.com">Pag Externa</a></li>
-          //Lista desordenada de elementos
+          <!-- //Lista desordenada de elementos -->
         </ul>
       </nav>
     </header>
     <main>
       <section>
         <article>
-          Cualquier informacion en la seccion
+          <p>
+              Cualquier informacion en la seccion
+          </p>
+          <p class="otra">
+              Cualquier informacion en la seccion
+          </p>
+          <p class="negrita otra">
+              Cualquier informacion en la seccion
+          </p>
         </article>
         <article>
 
@@ -28,7 +37,7 @@
       </section>
     </main>
     <footer>
-      //Texto
+      <!-- //Texto -->
     </footer>
     <h1>Calculadora</h1>
     
@@ -37,10 +46,11 @@
       <br>
       Se debe ingresar dos números y hacer click en el boton sumar para ver el resultado.
       <br>
-      <input type="number" size= "30" id="inNum1"/>+
-      <input type="number" size="30"id="inNum2"/>
-      <input type="button" value="Sumar" id="btnSumar">
-      <input type="button" value="Sumar y Guardar" id="btnSumarGuardar">
+      <input class="textbox" type="number" id="inNum1"/><span>+</span>
+      <label class="negrita">+</label> 
+      <input class = "textbox" type="number" id="inNum2"/>
+      <input type="button" class="boton verde" value="Sumar" id="btnSumar">
+      <input type="button" class="boton rojo" value="Sumar y Guardar" id="btnSumarGuardar">
       <br>
       <hr> 
       Resultado: <input type="text" size = "30" id="inResul">

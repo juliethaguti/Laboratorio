@@ -1,0 +1,47 @@
+h1,h2{
+    color: rgb(311,12,300);
+}
+p {
+    color:red;
+    font-size: 10-pt;
+}
+.negrita{
+    font-weight: bold;
+    font-size: 15-pt;
+}
+p.otra{
+    background-color: lightgreen;
+}
+input[type = 'button']
+{
+    margin: 50px 0px 50px 0px;
+    padding-right:  25px; 
+    color: white;
+    font-weight: bold;
+    height: 50px;
+    border-radius: 10px;
+    cursor: pointer;
+    
+}
+.rojo{
+    background-color: red;
+    font-size: 30-pt;
+    width: 200px;
+}
+
+.rojo:hover{
+    background: rgb(150,30,200);
+}
+.verde{
+    background-color: green;
+    font-size: 20-pt;
+    width: 125px;
+}
+
+.textbox{
+    margin: 30px;
+    padding-right: 10-pt;
+    height: 45px;
+    size: 80px;
+    text-align: right;
+}
