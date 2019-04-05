@@ -1,0 +1,48 @@
+body {
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 13pt;
+    background-color: #efefef;
+    padding: 10px;
+    margin: 0 0 0 30px;
+}
+h1{
+    font-size: 15pt;
+    color: #ffffff;
+    text-align: center;
+    padding: 18px 0 18px;
+    margin:  0 0 10px 0;
+}
+
+.img-circle {
+    border: 3px solid #9BC3B8;
+    border-radius: 50%;
+}
+
+#header {
+    background-image: url("./leonevecter.jpg");
+    background-size: cover;
+}
+
+#header img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+#header h1 {
+    font-size: 25pt;
+    color: #3b464c;
+    padding-top: 5px;
+    margin: 0;
+    font-weight: bold;
+    text-align: center;
+}
+
+table {
+    width: 100%;
+}
+
+hr {
+    background-color: #9B1800;
+}
