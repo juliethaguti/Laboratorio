@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <script>
+        var xml = new XMLHttpRequest();
+        xml.onreadystatechange = callback; 
+        xml.open("GET","http://localhost:3000/login",true);
+        xml.send("?usr=asd&pass=asd");
+        console.log("Hice el send")
+        console.log("Hice el send")
+        console.log("Hice el send")
+        console.log("Hice el send")
+
+        function callback(){
+            if(xml.readyState===4){
+                if(xml.status===200){
+                    console.log("Llegó respuesta del servidor",xml.readyState,xml.status);
+                }
+                else{
+                    alert("Error del servidor",xml.readyState,xml.status,xml.responseText);
+                }
+            }
+        }
+    </script>
+</head>
+<body>
+    
+</body>
+</html>
+<!--http.open("Metodo","url",Async);
+    Método: especifica el pedido GET/POST
+    Url: En este caso página html.
+
+    http.send();
+    http.send("string");
+<input type="text" id="usuario">
+    var xhttp
