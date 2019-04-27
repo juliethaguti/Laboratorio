@@ -1,0 +1,46 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 8pt;
+}
+form{
+    width: 20%;
+    height: 250px;
+    background-color: #dadde2;
+    padding: 5px;
+    border-radius: 5px;
+}
+#signIn{
+    width: 95%;
+    background-color: #129BCF;
+    color: #fefefe;
+    border-radius: 5px;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+}
+.img-circle {
+    border: 3px solid lightgray;
+    border-radius: 50%;
+}
+img {
+    display: block;
+    width: 80px;
+    height: 80px;
+    margin: auto;
+}
+
+#txtEmail, #txtPassword{
+    width: 90%;
+    border-radius: 5px;
+    cursor: pointer;
+    margin: 5px 5px 5px 5px;
+    padding: 5px;
+}
+
+#help{
+    float: right;
+    margin: 0 5px 0 0;
+}
+
+a{
+    text-decoration: none;
+}
