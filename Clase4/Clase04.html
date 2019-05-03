@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Grilla</title>
+    <script src="./Javas.js"></script>
+    <link rel="stylesheet" href="./HojaDeEstilos.css">
+</head>
+<body>
+    <br>
+    <input type="button" id="btnAgregar" value="Agregar" onclick="agregar()">
+    <br>
+    <form action="" id = "contenedor" class="fixed" hidden>
+        <input type="button" class="Rojo" value="x" onclick="cerrar()">
+        <h4>Nombre</h4>
+        <input type="text" class="sinError" id="Nombre" placeholder="Tu nombre..">
+        <h4>Apellido</h4>
+        <input type="text" class="sinError" id="Apellido" placeholder="Tu apellido...">
+        <br>
+        <input type="button" class="Verde" value="Guardar" onclick="guardar()">
+    </form>
+    <!--Propiedad hidden, para que aparezca y desaparezca-->
+    <h3>Lista de personas</h3>
+    <table id="table" class="relative1">
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Fecha</th>
+            <th>Telefono</th>
+        </thead>
+        <tbody id="cuerpoTabla">
+        
+        </tbody>
+    </table>
+</body>
+</html>
+
+<!--<tr>
+            <td>Peter</td>
+            <td>Griffin</td>
+            <td><a href="Borrar">borrar</a></td>
+        </tr>
+        <tr>
+            <td>Louis</td>
+            <td>Griffin</td>
+            <td><a href="Borrar">borrar</a></td>
+        </tr>
+        <tr>
+            <td>Joe</td>
+            <td>Swanson</td>
+            <td><a href="Borrar">borrar</a></td>
+        </tr>
+        <tr>
+            <td>Cleveland</td>
+            <td>Brown</td>
+            <td><a href="Borrar">borrar</a></td>
+        </tr>-->
