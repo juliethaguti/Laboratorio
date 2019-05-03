@@ -41,7 +41,7 @@ input[type = 'button']
 .textbox{
     margin: 30px;
     padding-right: 10-pt;
-    height: 45px;
-    size: 80px;
+    height: 30px;
+    size: 50px;
     text-align: right;
 }

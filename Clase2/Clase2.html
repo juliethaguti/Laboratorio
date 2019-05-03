@@ -1,6 +1,6 @@
 <html>
   <head>
-    <title>Document</title>
+    <title>SumaryGuardar</title>
     <script src="./funciones.js"></script>
     <link rel ="stylesheet" href="./hojaEstilos.css">
   </head>
@@ -40,31 +40,32 @@
       <!-- //Texto -->
     </footer>
     <h1>Calculadora</h1>
-    
-        <form action="GET">
-      Sumar numeros
-      <br>
-      Se debe ingresar dos números y hacer click en el boton sumar para ver el resultado.
-      <br>
-      <input class="textbox" type="number" id="inNum1"/><span>+</span>
-      <label class="negrita">+</label> 
-      <input class = "textbox" type="number" id="inNum2"/>
-      <input type="button" class="boton verde" value="Sumar" id="btnSumar">
-      <input type="button" class="boton rojo" value="Sumar y Guardar" id="btnSumarGuardar">
-      <br>
-      <hr> 
-      Resultado: <input type="text" size = "30" id="inResul">
-      <hr>
-      <br>
-      <h2>Historial de resultados</h2>
-    </form>
+    <fieldset>
+      <form action="GET">
+        Sumar numeros
+        <br>
+        Se debe ingresar dos números y hacer click en el boton sumar para ver el resultado.
+        <br>
+        <input class="textbox" type="number" id="inNum1"/><span>+</span>
+        <label class="negrita">+</label> 
+        <input class = "textbox" type="number" id="inNum2"/>
+        <input type="button" class="boton verde" value="Sumar" id="btnSumar">
+        <input type="button" class="boton rojo" value="Sumar y Guardar" id="btnSumarGuardar">
+        <br>
+        <hr> 
+        Resultado: <input type="text" size = "30" id="inResul">
+        <hr>
+      </form>
+    </fieldset>
+    <br>
+    <h2>Historial de resultados</h2>
     <table border="1" id = "tabla">
         <thead>
           <th>Numero1</th>
           <th>Numero2</th>
           <th>Numero3</th>
         </thead>
-        <tbody>
+        <tbody id="Resultados">
           <!-- <tr>
               <td>1</td>
               <td>2</td>
