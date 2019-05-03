@@ -1,7 +1,9 @@
 var xhr = new XMLHttpRequest();
-xhr.onreadystatechange = getPersonas;
+
 window.addEventListener("load", function(){
-    getPersonas();
+    xhr.open("GET","http://localhost:3000/personas",true);
+    xhr.onreadystatechange = getPersonas;
+    xhr.send();
     abrir(false);
     /*var btnAgregar = document.getElementById("btnAgregar");
     btnAgregar.addEventListener("click",agregar); //Agrega el boton agregar*/
@@ -11,8 +13,7 @@ window.addEventListener("load", function(){
     return document.getElementById(id);
 }*/
 
-function agregar(){
-    
+function agregar(){ 
     abrir(true);
     limpiar();
 }
@@ -63,12 +64,10 @@ function limpiar(){
 }
 
 function getPersonas(){
-    if(xhr.readyState === 3){
-        alert("REDFA");
-        document.write(xhr.sratus);
+    if(xhr.readyState === 4){
+        //alert("Llega");
         if(xhr.status === 200){
             var respuesta = xhr.responseText;
-            //alert("llego");
             if(respuesta != ""){
                 var arrayPersonas=JSON.parse(respuesta);
                 agregarAGrilla(arrayPersonas);
@@ -78,14 +77,14 @@ function getPersonas(){
     /*else{
         alert("Error del servidor",xhr.readyState,xhr.status,xhr.responseText);
     }*/
-        xhr.open("GET","http://localhost:3000/personas",true);
-        xhr.send();
+       
     
 }
 
 function agregarAGrilla(array){
     //var tabla = "<tr><th>Nombre</th><th>Apellido</th><th>Fecha</th><th>Telefono</th>";
-    var count = Object.keys(personas).length;
+    var tabla = document.getElementById("table");
+    var count = array.length;
     for(var i = 0; i<count;i++){
         tabla += "<tr><td>";
         tabla += array[i].nombre;
