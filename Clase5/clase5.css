@@ -1,0 +1,71 @@
+table{
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    background-color: #20b2aa;
+    color: lightgray;
+}
+
+th,td {
+    text-align: left;
+    padding: 8px;
+}
+tr:nth-child(even){
+    background-color: lightgray;
+}
+input[type = text] {
+    width: 100%;
+    padding: 12px 20px;
+    margin:  8px 0;
+    display: inline-block;
+
+    border-radius: 4px;
+    box-sizing: border-box;/* Suma para adentro*/
+}
+
+#contenedor{
+    width: 50%;
+    border-radius: 5px;
+    background-color: #f2f2f2; 
+    padding: 20px;
+    animation-name: aparecer;
+    animation-duration: 4s;
+}
+
+@keyframes aparecer{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+.sinError{
+    border: 4px solid #ccc;
+}
+.conError{
+    border: 4px solid red;
+}
+.Verde{
+    background-color: green;
+    width: 200px;
+    height: 50px;
+}
+
+.fixed {
+    position: fixed;
+    left: 25%;
+    top: 100px;
+}
+
+.Rojo {
+    background-color: red;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    display: block;
+    position: absolute;
+    right: 5px;
+    border-radius: 4px;
+    cursor: pointer;
+}
+/*static, relative (position) tipo block, absolute (div padre y div hijo(anidado)) El elemento hijo(absolute)
+ se posiciona relativo al padre(relative),fixe es fijo está posicionado sobre lo que se ve en pantalla*/ 
