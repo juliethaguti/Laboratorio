@@ -1,0 +1,142 @@
+body{
+    background-repeat: no-repeat;
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-size: cover;
+    font-family: Tahoma, Geneva, Verdana, sans-serif;
+    background-attachment: fixed;
+    margin: 0;
+    padding: 0;
+    border: 0;
+    position: center;
+    color: rgb(51,51,51);
+    display: block;
+}
+
+header{
+    background-color: rgb(51,51,51);
+    position: relative;
+    display: block;
+    width: 100%;
+    height: 75px;
+}
+
+.logo{
+    float: left;
+    width: 83px;
+    height: 65px;
+}
+
+table{
+    background-attachment: scroll;
+    background-clip: border-box;
+    background-color: rgba(255, 255, 255, 0.8);
+    background-origin: padding-box;
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    border-collapse: collapse;
+    text-align: center;
+    font-size: 16px;
+    width: 90%;
+    padding: 10px;
+}
+
+tr:nth-child(even){
+    background-color: lightgray;
+}
+
+th{
+    font-size: 20px;
+    font-weight: 700;
+    text-size-adjust: 100%;
+    vertical-align: baseline;
+    border-bottom: 2px solid black;
+}
+tr{
+    width: 100%;
+    padding: 0;
+}
+
+td{
+text-size-adjust: 100%;
+}
+
+#contenedor{
+    width: 30%;
+    background-color: #fcfcfc;
+    padding: 10px;
+    animation-name: aparecer;
+    animation-duration: 2s;
+    position: fixed;
+    left: 25%;
+    top: 100px;
+    color: antiquewhite;
+    border-radius: 2px;
+}
+
+@keyframes aparecer{
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+label{
+    float: left;
+    font-size: 18px;
+    font-weight: normal;
+    padding: 6px 0;
+    color: #AB6027;
+}
+
+#btnCerrar{
+    background-color: #fcfcfc;
+    color: rgb(51,51,51);
+    border: none;
+    display: block;
+    position: absolute;
+    align-content: right;
+}
+
+input[type = text]{
+    width: 95%;
+}
+
+select{
+    width: 50px;
+    margin-left: 10px;
+}
+
+select,input,button{
+    border-radius: 2px;
+    display: inline-block;
+    padding: 5px 5px 5px 5px;
+    margin-bottom: 10px;
+    font-size: 12pt;
+    border: 1px solid #cccccc;
+}
+
+date{
+    margin-left: 10px;
+}
+
+button{
+    margin-left: 10px;
+    width: 50px;
+}
+
+.eliminar{
+    float: right;
+}
+
+.container{
+    display: block;
+    position: relative;
+    cursor: pointer;
+    color: rgb(51,51,51);
+    font-size: 10pt;
+}
+
+.container input{
+    position: absolute;
+    cursor: pointer;
+}

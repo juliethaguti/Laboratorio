@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Primer parcial Laboratorio 3</title>
+    <link rel="stylesheet" href="./css/index.css">
+    <script src="./js/index.js"></script>
+</head>
+<body style="background-image:url('./img/utnFra.jpg');">
+    <header>
+        <img src="./img/LogoUtn.png" alt="logo" class="logo">
+    </header>
+    <div id="detalleBackground">
+
+    </div>
+    <div class="contenedor-formulario">
+        <form action="" id = "contenedor" class="fixed" hidden>
+            <div>
+                    <input type="button" value="x" id="btnCerrar">
+                <div class="input-group">
+                        <label for="nombre">Nombre</label>
+                        <input type="text" name="nombre" class="sinError" id="Nombre" autofocus>
+                </div>
+                <div class="input-group select">
+                        <label for="cuatrimestre">Cuatrimestre</label>
+                        <select name="cuatrimestre" id="Cuatrimestre">
+                            <option value="1">1</option>
+                            <option value="2">2</option>
+                            <option value="3">3</option>
+                            <option value="4">4</option>
+                        </select>
+                </div>
+                <div class="input-group radio">
+                        <label for="turno">Turno</label>
+                        <input type="radio" name="turno" value="mañana" id="mañana">
+                        <label for="mañama">Mañana</label>
+                        
+                        <input type="radio" name="turno" value="noche" id="noche">
+                        <label for="noche">Noche</label>
+                </div>
+                <div class="input-group date">
+                        <label for="fecha">Fecha final</label>
+                        <input type="date" name="fecha">
+                </div>
+                <input type="button" value="Modificar" class="modificar">
+                <input type="button" value="Eliminar" class="eliminar">
+            </div>
+        </form>
+    </div>
+</body>
+</html>    
+            
