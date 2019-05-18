@@ -7,14 +7,15 @@ window.addEventListener("load",function(){
     xhr.send();
     var btnCerrar = document.getElementById("btnCerrar");
     btnCerrar.addEventListener("click",cerrar);
+    var btnModificar = document.getElementsByClassName("modificar");
+    btnModificar.addEventListener("click",modificar);
 });
 
 function callback(){
     if(xhr.readyState === 4 && xhr.status === 200){
 
-        var respuesta = xhr.responseText;
-        var array = JSON.parse(respuesta);
-        var largo = array.lenght;
+        var resp = xhr.responseText;
+        var array = JSON.parse(resp);
         cargar(array);
     }
     else{
@@ -41,9 +42,9 @@ function cargar(respuesta){
     turnoTitulo.appendChild(document.createTextNode("Turno"));
     var cuerpoTabla = document.createElement("tbody");
     tabla.appendChild(cuerpoTabla);
-    var count = respuesta.lenght;
-
+    
     for(var i = 0; i<15;i++){
+        
         var fila = document.createElement("tr");
         cuerpoTabla.appendChild(fila);
         fila.addEventListener("dblclick",dobleClick);
@@ -78,4 +79,8 @@ function dobleClick(){
 
 function cerrar(){
     mostrarFormulario(true);
+}
+
+function modificar(){
+
 }

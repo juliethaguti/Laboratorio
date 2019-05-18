@@ -8,7 +8,6 @@ body{
     margin: 0;
     padding: 0;
     border: 0;
-    position: center;
     color: rgb(51,51,51);
     display: block;
 }
@@ -47,19 +46,21 @@ tr:nth-child(even){
 }
 
 th{
+    height: 50px;
     font-size: 20px;
     font-weight: 700;
-    text-size-adjust: 100%;
-    vertical-align: baseline;
+    font-size-adjust: 100%;
+    vertical-align: center;
     border-bottom: 2px solid black;
 }
 tr{
+    height: 40px;
     width: 100%;
     padding: 0;
 }
 
 td{
-text-size-adjust: 100%;
+font-size-adjust: 100%;
 }
 
 #contenedor{
@@ -81,11 +82,12 @@ text-size-adjust: 100%;
 }
 
 label{
+    margin-top: 10px;
+    left: 10px;
     float: left;
     font-size: 18px;
     font-weight: normal;
-    padding: 6px 0;
-    color: #AB6027;
+    color: #F37D1D;
 }
 
 #btnCerrar{
@@ -95,10 +97,13 @@ label{
     display: block;
     position: absolute;
     align-content: right;
+    right: 10px;
 }
 
 input[type = text]{
     width: 95%;
+    border: none;
+    border-bottom-color: #F37D1D;
 }
 
 select{
@@ -106,7 +111,12 @@ select{
     margin-left: 10px;
 }
 
+input[type = radio]{
+    float: left;
+}
+
 select,input,button{
+    
     border-radius: 2px;
     display: inline-block;
     padding: 5px 5px 5px 5px;
@@ -116,7 +126,8 @@ select,input,button{
 }
 
 date{
-    margin-left: 10px;
+    margin-left: 20px;
+    width: 100%;
 }
 
 button{
@@ -126,6 +137,7 @@ button{
 
 .eliminar{
     float: right;
+    margin-top: 20px;
 }
 
 .container{
@@ -139,4 +151,14 @@ button{
 .container input{
     position: absolute;
     cursor: pointer;
+}
+
+.input-group radio{
+    float: left;
+    left: 10px;
+}
+
+.modificar{
+    margin-top: 20px;
+    float: left;
 }
