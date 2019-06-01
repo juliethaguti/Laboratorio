@@ -1,0 +1,6 @@
+Antes istalarlo npm install boos... -6 -6
+
+//Ir a boostr... min css
+incluir la hoja de estilos de boos..
+
+row nos divide la grilla en 12 columnas
