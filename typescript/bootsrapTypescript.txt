@@ -1,0 +1,91 @@
+28 junio Parcial
+
+jquery, bootstrap, maps y filter, typescript.
+
+Responsive, setear para todos los niveles de pantalla.
+setear el viewport como meta, para manejar el sistema de grillas.
+
+Para instalarlo npm init
+
+npm install jquery --save //primero instalar jquery
+npm install bootstrap --save quitar el ^
+
+No subir al repositorio el node_modules
+
+Los ejemplos son pasados por CDN...
+
+alineaciones verticales class="row align-items-start divRow", colocar px de alto para notar
+class="row align-items-center divRow"
+class="row align-items-end divRow"
+
+Alineacion horizontal
+
+class="row justify-content-start divRow"
+class="row justify-content-center divRow"
+class="row justify-content-end divRow"
+class="row justify-content-between divRow"
+class="row justify-content-around divRow"
+
+Solo en Bootstrap 4
+
+Orientación 
+
+Cambiar posicionamiento por 
+
+class="col-3 order-md-3 "
+
+Anidamiento
+
+row dentro de la row 12 columnas independiente del espacio disponible
+
+Offset
+
+Nos permite saltar un espacio
+
+primero la hoja de estilos de bootstrap y luego la propia.
+
+Botones.
+Alineación de texto.
+Imagenes
+Nav
+
+Siempre va a estar un container y luego dividirlo.
+
+Typescript 
+
+Java
+Tipados estáticos: De un solo tipo desde que se crea hasta que muere :(.
+Consola inteligente, predice lo que va a poner.
+
+Javascript
+tipado dinamico: El compilador no nos ayuda, el IDE tampoco ayuda, el autocompletado limitado.
+Orientado a Objetos con prototipos:  Tres forma diferentes de implementar "clases".
++La herencia no es limpia.
+Sin modularidad
+
+¿Que es typescript?
+Es un superset estricto de Javascript, y añade de manera opcional, tipados estáticos y herramientas...
+Añade los tipos estáticos como las interfaces y los opcionales.
+Orientado a Objetos
+
+npm install -g typescript
+tsc --sourcemap archivo.ts // para compilar
+tsc archivo.ts -w queda escuchando el archivo y automáticamente lo transforma
+
+Tipos de datos
+
+Primitivos
+*String
+*Number
+*Booleanos ej,
+	let esBatman:boolean;
+	let esAquaman = true;
+*Null/Undefined
+
+Compuestos
+*Funciones
+*Objetos literales Json
+*Clases
+
+Interfaces y genéricos
+
