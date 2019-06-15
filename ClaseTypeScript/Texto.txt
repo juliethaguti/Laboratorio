@@ -1,0 +1,14 @@
+Manejo de clases, namespace y módulos.
+
+En carpeta en blanco 
+npm init //genera el package.json
+
+tcs --init // Genera el archivo tsconfig.json
+
+nota: No hacer tsc archivo.ts -w porque no toma lo del config, se usa :
+
+tsc -w
+
+nota, fijarse el modo de debugger
+
+
