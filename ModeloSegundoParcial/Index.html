@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Manejadora de empleados</title>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./node_modules/bootstrap/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">JulietAGuti</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+      
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Mostrar</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Formulario</a>
+            </li>
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                Ver
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="#">Promedio</a>
+                <a class="dropdown-item" href="#">Filtrar</a>
+                <a class="dropdown-item" href="#">Solo Nombre y Apellido</a>
+              </div>
+            </li>
+        </div>
+      </nav>
+      <div class="row  justify-content-around divRow">
+          <div class="col-lg-3">
+              <h2>Alta de Empleado</h2>
+              <form>
+                <div class="form-group">
+                  <label for="Nombre">Nombre</label>
+                  <input type="text" class="form-control" id="Nombre">
+                </div>
+                <div class="form-group">
+                  <label for="Apellido">Apellido</label>
+                  <input type="text" class="form-control" id="Apellido">
+                </div>
+                <div class="form-group">
+                  <label for="Edad">Edad</label>
+                  <input type="text" class="form-control" id="Edad">
+                </div>
+                <div class="form-group">
+                  <label for="Legajo">Legajo</label>
+                  <input type="text" class="form-control" id="Legajo">
+                </div>
+                <div class="form-group">
+                  <label for="Horario">Horario</label>
+                  <select name="horario" id="Horario" class="form-control">
+                      <option selected>Tarde</option>
+                      <option>Noche</option>
+                      <option>Mañana</option>
+                    </select>  
+                </div>
+                <button class="btn btn-danger">Cancelar</button>
+                <button class="btn btn-success btn-lg">Agregar</button>
+              </form>
+            </div>
+            <div class="col-lg-8">
+              <h2>Lista de Empleados</h2>
+              <table class="table table-striped">
+                <thead>
+                  <tr>
+                    <th>Nombre</th>
+                    <th>Apellido</th>
+                    <th>Edad</th>
+                    <th>Turno</th>
+                    <th>Accion</th>
+                  </tr>
+                </thead>
+              </table>
+            </div>
+      </div>
+</body>
+</html>
