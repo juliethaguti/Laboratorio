@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio numero uno</title>
+    <script type="text/javascript">
+    var nombre;
+    nombre = "Juliet";
+    nombre = 132;
+    
+    // if(nombre == 132){
+    //     alert("El nombre es 132");
+    // }
+    // else{
+    //     alert("Usted no es 132");
+    // }
+
+    console.log(sumar(1,2));
+    function sumar(num1, num2){
+        console.log(num1);
+        //alert(num1+num2);
+        return num1+num2;
+    }
+
+    function mostrar(){
+        var usuario = document.getElementById("usr");
+        var Password = document.getElementById("pass");
+
+        if(usuario.value == "juliet"){
+            alert("el usuario es valido");
+        }
+        else{
+            alert("El usuario no es válido");
+        }
+
+        if(Password.value == 321){
+            alert("La contraseña es valida");
+        }
+        else{
+            alert("La contraseña no es válida");
+        }
+    }
+
+    </script>
+</head>
+<body>
+    <fieldset>
+        <legend>Login</legend>
+        <!-- <form action="" method="get"> -->
+            <label for="usr">Usuario:</label>
+            <br>
+            <input type="text" id="usr" name="txtUsr">
+            <br>
+            <label for="">Contraseña:</label>
+            <br>
+            <input type="password" id="pass" name="txtPass">
+            <br>
+            <input type="checkbox" name="Recordar" id="Recordar">Recordar usuario y Contraseña
+            <br>
+            <input type="button" value="Enviar" onclick="mostrar();">
+            <input type="reset" value="Limpiar">
+        <!-- </form> -->
+    </fieldset>
+</body>
+</html>
