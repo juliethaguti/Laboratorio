@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio numero 3</title>
+    <link rel="stylesheet" href="index.css">
+    <script src="index.js"></script>
+</head>
+<body>
+    <form action="">
+        <label for="txtNombre" id="nombre">Nombre</label><br>
+        <input type="text" name="" id="txtNombre" class="sinError" placeholder="Tu nombre..."><br>
+        <label for="txtApellido" id="apellido">Apellido</label><br>
+        <input type="text" name="" id="txtApellido" class="sinError" placeholder="Tu apellido..."><br>
+        <input type="button" value="Guardar" id="Guardar">
+    </form>
+
+    <h3>Lista de Personas</h3>
+    <table id="tabla">
+        <thead>
+            <th>Nombre</th>
+            <th>Apellido</th>
+            <th>Accion</th>
+        </thead>
+        <tbody id="cuerpoTabla">
+            <tr>
+                <td>Peter</td>
+                <td>Griffin</td>
+                <td><a href="Borrar">Borrar</a></td>
+            </tr>
+            <tr>
+                <td>Louis</td>
+                <td>Griffin</td>
+                <td><a href="Borrar">Borrar</a></td>
+            </tr>
+            <tr>
+                <td>Joe</td>
+                <td>Swanson</td>
+                <td><a href="Borrar">Borrar</a></td>
+            </tr>
+            <tr>
+                <td>Cleveland</td>
+                <td>Brown</td>
+                <td><a href="" onclick="Borrar(event)">borrar</a></td>
+            </tr>
+        </tbody>
+    </table>
+</body>
+</html>

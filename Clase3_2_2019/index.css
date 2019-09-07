@@ -1,0 +1,55 @@
+form{
+    background-color: #f2f2f2;
+    border-radius: 5px;
+    width: 50%;
+    padding: 20px;
+}
+
+input[type = text]{
+    width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border-radius: 5px;
+    box-sizing: border-box;/*contiene el tamaño de los elementos dentro del contenedor*/
+    /*display: inline-block;*/
+}
+
+.error{
+    border: 1px solid red;
+}
+
+.sinError{
+    border: 1px solid #ccc;
+}
+
+input[type=button]{
+    background-color: green;
+    width: 50%;
+    height: 50px;
+    border: 4px solid #ccc;
+    border-radius: 4px;
+    color: #ccc;
+    font-size: 20px;
+}
+#tabla{
+    border-collapse: collapse;
+    width: 100%;
+}
+th{
+    background-color: #20b2aa;
+    color: lightgray;
+}
+
+th,td {
+    text-align: left;
+    padding: 8px;
+}
+
+td :nth-child(even){
+    background-color: lightslategray;
+}
+
+/*margin auto centra automanticamente*/
+/*Poner la propiedad display flex al padre: para ser responsive*/
+/*flex-direction: como esos componentes se van a posicionar, justify-content, align items. flex-grow: Este se le aplica alos hijos*/
+
