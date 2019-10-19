@@ -1,0 +1,9 @@
+npm init -y
+npm install jquery --save
+*No subir node_modules.
+*Y para descargar:
+npm install
+
+*Escribir en el html:<script src="./node_modules/jquery/dist/jquery.min.js"></script>
+
+Luego hacer referencia a nuestro archivo js 
