@@ -1,0 +1,9 @@
+objetos tipos JSON. Por fuera de la clase va con la palabra reservada function. Cualquier código,
+javascript funciona en typescript. tipos de datos var y let<-usar. Las variables son de un tipo: boolean, 
+any, string, number. Y no se pueden modificar. No hay sobrecarga de métodos y los parámetros son obligatorios
+y opcionales con el signo de ? No pueden existir dos funciones con el mismio nombre ni adentro de la clase, 
+ni por fuera de ella.
+
+npm install -g tsc
+Después de instalarlo: tsc ./Practica1.ts -w //Genera un archivo js -w para que compile automáticamente
+tsc ./*.ts -w //Para todos los archivos de la carpeta
